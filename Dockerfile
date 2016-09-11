@@ -1,3 +1,5 @@
 FROM nginx:1.10.1
 
-COPY repo.conf /etc/nginx/conf.d/repo.conf
+COPY repo.conf.template /etc/nginx/conf.d/repo.conf.template
+
+CMD /bin/bash -c "envsubst < /etc/nginx/conf.d/repo.conf.template > /etc/nginx/conf.d/repo.conf && nginx -g 'daemon off;'"
