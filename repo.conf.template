@@ -1,8 +1,0 @@
-server {
-  server_name ${NGINX_SERVER_NAME};
-  listen 80;
-
-  location / {
-    root /alloc/data/deb;
-  }
-}
