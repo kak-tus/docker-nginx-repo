@@ -1,3 +1,3 @@
-# docker-nginx-repo
+# docker-nginx-static
 
 For internal usage.
